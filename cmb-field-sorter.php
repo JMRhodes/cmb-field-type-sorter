@@ -3,7 +3,7 @@
 Plugin Name: CMB Field Type: Sorter
 Plugin URI: http://tranbang.net
 Description: Sorter field type for Custom Metaboxes and Fields for WordPress
-Version: 2.0.4
+Version: 1.0.0
 Author: Tran Bang
 Author URI: http://www.tranbang.net/
 License: GPLv2+

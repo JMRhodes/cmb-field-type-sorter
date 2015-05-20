@@ -1,5 +1,5 @@
 === CMB Field Type: Sorter ===
-Contributors: reduxframework
+Contributors: Tran Bang
 Tags: wordpress, sorter,  layout, jqueryui
 Requires at least: 3.6.1
 Tested up to: 4.2.2
@@ -51,10 +51,8 @@ You can install this field type as you would a WordPress plugin:
 3. Activate the plugin in the Plugin dashboard
 4. Alternatively, you can place the plugin folder in with your theme/plugin. After you call CMB:
 
-require_once \'init.php\';
-Add another line to include the cmb-field-select2.php file. Something like:
-
-require_once \'cmb-field-select2/cmb-field-select2.php\';
+Add another line to include the cmb-field-sorter.php file. Something like:
+require_once 'cmb-field-type-sorter/cmb-field-sorter.php';
 
 == Screenshots ==
 1. admin panel
