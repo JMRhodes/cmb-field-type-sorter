@@ -66,7 +66,11 @@ function tb_sorter_render( $field, $value, $object_id, $object_type, $field_type
 add_filter( 'cmb2_render_tb_sorter', 'tb_sorter_render', 10, 5 );
 
 
-function tb_sorter_escape( $check, $meta_value ) {	
+function tb_sorter_escape( $check, $meta_value ) {
+	// if not repeatable, bail out.
+	if ( ! is_array( $meta_value ) ) {
+		return $check;
+	}
 
 	foreach ( $meta_value as $groups => $sortlist ) {
 		$meta_value[ $groups ] = array_map( 'esc_attr', $sortlist );
